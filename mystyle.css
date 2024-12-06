@@ -1,0 +1,133 @@
+
+* {
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100px;
+    border: 5px blue solid;
+}
+
+#wrapper {
+    border: 5px red solid;
+    /*height: 530px;*/
+}
+
+.main {
+    border: 3px green dotted;
+    margin-left: 300px;
+    /*height: 500px;*/
+    /*overflow:auto;*/
+}
+
+.side {
+    float: left;
+    width: 300px;
+    /*height: 500px;*/
+    border: 3px orange dotted;
+}
+
+.footer {
+    clear: both;
+    height: 100px;
+    border: 5px blue solid;
+}
+.gohome{
+    position:right;
+    right:0px;
+}
+.nav{
+    position:sticky;
+    top:0;
+    background-color:aqua;
+    height:50px;
+    z-index: 9999;
+}
+.nav li{
+    display:inline-block;
+    width: 200px;
+    position: relative;
+}
+
+ul{
+   margin:0;
+   padding: 0;
+}
+.menu li ul{
+   position: absolute;
+   display: none;
+}
+
+.menu li:hover>ul
+{
+display: block;
+}
+.menu ul li>ul{
+   left: 100%;
+   top:0;
+}
+.menu li a:hover{
+    background-image: linear-gradient(red,blue);
+}
+.nav-sticky {
+    position: sticky;
+    top: 0;
+    width:300px;
+    margin:10px 0;
+    background-color:coral;
+} 
+.nav-fixed {
+    position:fixed;
+    bottom:0;
+    color:white;
+    background:black;
+    left:80%;
+}
+h2 {
+    color: #008844;
+}
+.s {
+    background: yellow;
+    overflow: auto;
+    margin:4px;
+}
+
+.main p {
+    border-width: 5px;
+    border-style: dashed solid dotted double;
+    border-color: yellow;
+    margin-left:305px;
+    padding: 2px;
+}
+img {
+    width:300px;
+}
+.txtpos{
+    position:absolute;   /*位置會在最近一個不是static的父輩區塊中*/
+    bottom:5px;
+    left:5px;
+    font-size:12px;
+    color:white;
+    background-color:rgba(10, 104, 116, 0.69);
+}
+.imgbox {
+    position: relative;
+    float: left;
+    border: 2px green solid;
+}
+
+
+.menu a{
+   text-decoration: none;
+   height: 50px;
+   width: 100%;
+   line-height: 50px;
+   display: inline-block;
+   text-align: center;
+   color: white;
+   background-image: linear-gradient(black,gray);
+   transition: background-image 3s;
+   
+   }
+
